@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1632580241 source:d:\clanguage\practice\5_10\point.cpp
+	"Point.h"
+	<iostream>
+
+1632581173 d:\clanguage\practice\5_10\point.h
+
+1632581292 source:d:\clanguage\practice\5_10\main.cpp
+	"Point.h"
+	<iostream>
+
