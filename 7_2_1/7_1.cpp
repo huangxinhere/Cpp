@@ -10,6 +10,6 @@ int main(){
     cout << rect.getX() << ","
         << rect.getY() << ","
         << rect.getW() << ","
-        << rect.getH() << ",";   
+        << rect.getH() << endl;   
     return 0;
 }

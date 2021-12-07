@@ -2,7 +2,9 @@
 #define _RACTANGLE_H
 #include "Point.h"
 
-class Rectangle:public Point
+/*public和private的区别：private要把基类成员当做私有数据来处理，即只能类内部调用*/
+
+class Rectangle:private Point
 {
 private:
     float w, h;
@@ -12,18 +14,13 @@ public:
         this->w = w;
         this->h = h;
     }
+    void move(float offX, float offY){
+        Point::move(offX, offY);
+    }
+    float getX(){return Point::getX();}
+    float getY(){return Point::getY();}
     float getW(){return w;}
     float getH(){return h;}
-    Rectangle(/* args */);
-    ~Rectangle();
 };
-
-Rectangle::Rectangle(/* args */)
-{
-}
-
-Rectangle::~Rectangle()
-{
-}
 
 #endif
